@@ -13,7 +13,7 @@ public class StringController {
     public String concat(String first, @RequestParam(required = false) String second) {
 
         if(second == null) {
-            second = first;
+           return first;
         }
         return first + second;
     }
