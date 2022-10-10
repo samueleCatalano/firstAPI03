@@ -11,8 +11,7 @@ public class StringController {
 
     @GetMapping
     public String concat(String first, @RequestParam(required = false) String second) {
-        first = "Hello ";
-        second = "Elliot";
+
         if(second == null) {
             second = first;
         }
